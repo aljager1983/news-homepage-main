@@ -9,6 +9,8 @@
 
 *, *::before, *::before {
     box-sizing: border-box;
+    /* outline-style: solid;
+    outline-width: 1px; */
 }
 
 body {
@@ -17,13 +19,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
 }
 
 .navbar {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     right: 0;
@@ -32,9 +35,149 @@ header {
     line-height: 2rem;
 }
 
+.burger {
+    display: flex;
+    align-items: center;
+    background-image: url("assets/images/icon-menu.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
 .close {
     background-image: url("assets/images/icon-menu-close.svg");
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
+    
 }
+
+.close:hover {
+    cursor: pointer;
+}
+
+.mainImage {
+    margin: 1rem 0;
+    padding: 7rem;
+    background: url("assets/images/image-web-3-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--Darkgrayishblue);
+}
+
+mark {
+    display: flex;
+    color: var(--Off-white);
+    padding: 1rem;
+    justify-content: center;
+    left: 0;
+    background-color: var(--Softred);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 50%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Verydarkblue);
+    color: var(--Off-white);
+    padding: 0 1rem 1rem 1rem;
+    margin: 1rem  0;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--Softorange);
+}
+
+aside div p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--Grayishblue);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Grayishblue);
+}
+
+.last {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+ }
+
+ footer {
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+ }
+
+ footer div img {    
+    height: 90px;
+ }
+
+ .details {
+    display: flex;
+    padding: .5rem 0;
+ }
+
+ .info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+ }
+
+ h4, h5, h6, .footerDetails {
+    margin: 0;
+ }
+
+ h6 {
+    padding: .5rem 0;
+    font-size: .75rem;
+    font-weight: 800;
+ }
+ h5 {
+    font-size: 1.5rem;
+    color: var(--Grayishblue)
+ }
+
+ .footerDetails {
+    font-size: .7rem;
+ }
+
+ @media screen and (min-width:376px) {
+    body {
+        display: grid;
+        
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .navbar:hover {
+        cursor: pointer;
+    }
+    .burger, .close {
+        display: none;
+    }
+
+ }
