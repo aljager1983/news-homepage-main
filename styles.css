@@ -69,7 +69,7 @@ header {
 }
 
 h1 {
-    font-size: clamp(2.25rem, 5vh + 1rem, 5rem);
+    font-size: 2.25rem;
     font-weight: 800;
 
 }
@@ -82,10 +82,9 @@ p {
 
 mark {
     display: flex;
+    justify-content: center;
     color: var(--Off-white);
     padding: 1rem;
-    text-align: center;
-    left: 0;
     background-color: var(--Softred);
     font-size: .7rem;
     font-weight: 700;
@@ -104,12 +103,17 @@ aside {
 
 
 h3 {
-    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     color: var(--Softorange);
 }
 
+h4 {
+    font-size: clamp(.5rem, 5vw, 1.5rem);
+}
+
 aside div p {
-    font-size: .8rem;
+    font-size: clamp(.8rem, 3vw, 1.3rem);
     font-weight: 400;
     color: var(--Grayishblue);
     padding-bottom: 1rem;
@@ -129,7 +133,7 @@ aside div p {
  }
 
  footer div img {    
-    height: 90px;
+    height: 25vw;
  }
 
  .details {
@@ -245,15 +249,22 @@ aside div p {
         flex-direction: column;
         background-color: var(--Verydarkblue);
         color: var(--Off-white);
-        padding: 0;
+        padding: 1rem;
         margin: 0;
     }
     
     h1 {
+        font-size: clamp(1rem, 10vh, 3rem);
+        font-weight: 800;
         grid-row: 2/3;
         grid-column: 1/2;
         margin: 0;
         line-height: 1;
+    }
+
+    h3 {
+        margin: 0;
+        padding-bottom: 2rem;
     }
 
     .p-readmore {
@@ -282,6 +293,10 @@ aside div p {
         grid-row: 4/5;
         gap: 1rem
     }
+
+    footer div img {    
+        height: 10vw;
+     }
 
     #detail-1{
         grid-column: 1/2;
