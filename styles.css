@@ -106,7 +106,7 @@ p {
     color: var(--Darkgrayishblue);
 }
 
-mark {
+h2 {
     display: flex;
     justify-content: center;
     color: var(--Off-white);
@@ -118,7 +118,7 @@ mark {
     width: 50%;
 }
 
-mark:hover {
+h2:hover {
     background-color: black;
 }
 
