@@ -49,6 +49,12 @@ header {
     background-color: var(--Off-white);
     line-height: 4rem;
     font-size: 1.2rem;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .burger {
@@ -125,7 +131,7 @@ aside {
     padding: 0 1rem 1rem 1rem;
 }
 
-.navbar div:hover, aside h4:hover, h6:hover {
+.navbar div:hover, aside h4:hover, h6:hover, a:hover {
     cursor: pointer;
     color: var(--Softred);
 }

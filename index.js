@@ -17,6 +17,14 @@ burger.addEventListener("click", function () {
     cover.style.display = "block";
 })
 
+newAside.addEventListener("click", function () {
+    closeAll();
+})
+
+popular.addEventListener("click", function () {
+    closeAll();
+})
+
 closeNav.addEventListener("click", function () {
     closeAll();
 })
