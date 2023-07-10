@@ -12,16 +12,16 @@
   <title>Frontend Mentor | News homepage</title>
 
 </head>
-<body onload="size()">
-  <div id="wh" note="for testing height and width of browser"></div>
-
+<body onload="size()" id="body">
+  <!-- <div id="wh" note="for testing height and width of browser"></div> -->
+<div class="cover" id="cover"></div>
 <header>
   <img src="assets/images/logo.svg" alt="company logo-W" class="logo">
   <div class="navbar" id="navbar">
     <div class="close" id="close"></div>
     <div class="home" id="home">Home</div>
-    <div class="new" id="new">New</div>
-    <div class="popular" id="popular">Popular</div>
+    <div class="new" id="new"><a href="#new">New</a></div>
+    <div class="popular" id="popular"><a href="#popular">Popular</a></div>
     <div class="trending" id="trending">Trending</div>
     <div class="categories" id="categories">Categories</div>
   </div> 
@@ -39,7 +39,7 @@
 </div>
 </main>
 
-<aside>
+<aside id="new">
   <h3>New </h3>
 
   <div class="hydrogen">
@@ -59,12 +59,11 @@
     <p class="last"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
     
   </div>
-  
 </aside>
   
 
 
-<footer>
+<footer id="popular">
   <div class="details" id="detail-1">
     <img src="assets/images/image-retro-pcs.jpg" alt="image of old computer">
     <div class="info">
