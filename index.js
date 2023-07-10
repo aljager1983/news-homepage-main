@@ -37,7 +37,15 @@ function size () {
 }
 
 function closeAll () {
-    burger.style.display = "flex";
-    navbar.style.display = "none";
+    
+    if(window.innerWidth <= 375) {
+        burger.style.display = "flex";
+        navbar.style.display = "none";
+    } else {
+        burger.style.display = "none";
+        navbar.style.display = "flex";
+        navbar.style.flexDirection = "row";
+    }
+    
     cover.style.display = "none";
 }
