@@ -131,18 +131,18 @@ aside {
     padding: 0 1rem 1rem 1rem;
 }
 
-.navbar div:hover, aside h3:hover, h5:hover, a:hover {
+.navbar div:hover, aside h4:hover, h6:hover, a:hover {
     cursor: pointer;
     color: var(--Softred);
 }
 
-h2 {
+h3 {
     margin: 1rem 0;
     font-size: clamp(1.5rem, 5vh, 3rem);
     color: var(--Softorange);
 }
 
-h3 {
+h4 {
     font-size: clamp(1rem, 2.5vh, 2rem);
     padding-top: 1rem;
 }
@@ -183,15 +183,15 @@ aside div p {
     padding: 0 1rem;
  }
 
- h3, h4, h5, .footerDetails {
+ h4, h5, h6, .footerDetails {
     margin: 0;
  }
 
- h5 {
+ h6 {
     padding: .5rem 0;
     font-weight: 800;
  }
- h4 {
+ h5 {
     font-size: clamp(1.5rem, 3vw, 3em);
     color: var(--Grayishblue)
  }
@@ -296,7 +296,7 @@ aside div p {
         font-size: clamp(1rem, 6vh, 7rem);
     }
 
-    h2 {
+    h3 {
         margin: 0;
         padding-bottom: 1rem;
     }
@@ -328,7 +328,7 @@ aside div p {
         grid-row: 3/4;
         padding: 0;
     }
-    h5, .footerDetails {
+    h6, .footerDetails {
         font-size: clamp(.3rem, 12vw, 1rem);
     }
     footer div img {    
